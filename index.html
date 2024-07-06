@@ -185,6 +185,15 @@
         <p id="day-description">Select a day to see details.</p>
         <div id="custom-content"></div>
       </div>
+      <div id="form-text">
+        <p id="form-p">Share an Interesting Paper!</p>
+        <div id="google-form">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdL8Fpq_ubx9GUd4CN7B1j0Jr9F300jyZ0hBmsWDfybbOCpVw/viewform?usp=sf_link" target="_blank">
+            <img src="assets/google-form-logo.webp" alt="Google Form" class="icon form-icon">
+          </a>
+        </div>
+      </div>
+     
       <img
       src="./assets/arrow.png"
       alt="Arrow icon"
@@ -192,6 +201,10 @@
       onclick="location.href='./#experience'"
     />
     </section>
+
+
+
+
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
@@ -329,23 +342,19 @@
     <section id="projects">
       <h1 class="title">Projects</h1>
       <div class="projects-wrapper">
-        <span class="material-symbols-rounded" id="prev-project">chevron_left</span>
+        <span class="material-symbols-rounded proj-arrow" id="prev-project">chevron_left</span>
         <div class="project-content">
-          <div class="project-icon">
+          <a href="#" id="project-doc-link">
             <img src="path/to/doc-icon.png" alt="Document Icon" id="project-doc-icon" />
-          </div>
+          </a>
           <div class="project-description">
             <p id="project-description">Project description goes here.</p>
           </div>
         </div>
-        <span class="material-symbols-rounded" id="next-project">chevron_right</span>
+        <span class="material-symbols-rounded proj-arrow" id="next-project">chevron_right</span>
       </div>
-      <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#contact'"
-    />
+    </section>
+    
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>

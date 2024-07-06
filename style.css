@@ -565,6 +565,30 @@ header .research-current-date {
   margin: 0;
 }
 
+#form-text {
+  margin-top: 40px; /* Add spacing between the calendar and the form section */
+  text-align: center;
+}
+
+#google-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#google-form .icon.form-icon {
+  max-width: 100px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+#google-form .icon.form-icon:hover {
+  transform: scale(1.2); /* Slightly increase size on hover */
+}
+
+
+
 /* PROJECTS */
 
 #projects {
@@ -585,16 +609,16 @@ header .research-current-date {
   position: relative;
 }
 
-.arrow {
+.proj-arrow {
   cursor: pointer;
   font-size: 2rem;
   color: #878787;
   user-select: none;
 }
 
-.arrow:hover {
+.proj-arrow:hover {
   color: #333;
-  cursor: pointer;
+  cursor: pointer; /* Ensure pointer cursor on hover */
 }
 
 .project-content {
@@ -617,4 +641,3 @@ header .research-current-date {
 .project-description {
   max-width: 600px;
 }
-
