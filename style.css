@@ -435,6 +435,12 @@ footer p {
   margin: 0 auto; /* Center the section horizontally */
 }
 
+.underconstruc {
+  text-align: center;
+  margin-bottom: 10px;
+  color: red;
+}
+
 .research-title {
   text-align: center;
   margin-bottom: 20px; /* Add some space below the title */
@@ -629,12 +635,13 @@ header .research-current-date {
   flex: 1;
 }
 
-.project-icon {
+.project-doc-icon {
   margin-bottom: 1rem;
 }
 
-.project-icon img {
-  max-width: 50px;
+.project-doc-icon img {
+  max-width: 150px;
+  height: auto;
   cursor: pointer;
 }
 

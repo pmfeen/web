@@ -1,15 +1,20 @@
 const projects = [
     {
-      description: "Project 1: Description of the first project.",
-      docUrl: "path/to/project1-doc.pdf",
-      iconUrl: "path/to/doc-icon1.png",
+      description: "SecureLLM: A Framework for Provably Secure Large Language Models",
+      docUrl: "../assets/securellm.pdf",
+      iconUrl: "../assets/securellm.png",
     },
     {
-      description: "Project 2: Description of the second project.",
-      docUrl: "path/to/project2-doc.pdf",
-      iconUrl: "path/to/doc-icon2.png",
+      description: "Improving Deep Learning Based Molecular Fingerprints Through Informed Resampling",
+      docUrl: "../assets/NLP_Final_Paper.pdf",
+      iconUrl: "../assets/nlp.png",
     },
-    // Add more projects as needed
+    {
+      description: "Using Compositionality for LLM Leak Detection and Source Identification",
+      docUrl: "../assets/le.pdf",
+      iconUrl: "../assets/plerplexity.png"
+
+    }
   ];
   
   let currentProjectIndex = 0;
