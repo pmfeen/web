@@ -640,8 +640,8 @@ header .research-current-date {
 }
 
 .project-doc-icon img {
-  max-width: 150px;
-  height: auto;
+  width: 200px;
+  height: 300px;
   cursor: pointer;
 }
 

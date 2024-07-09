@@ -6,17 +6,70 @@ dayDescription = document.getElementById("day-description");
 
 // Custom content for each day
 const dayContents = {
+    "2024-06-27": `
+        <p>Read MLIR: A Compiler Infrastructure for the End of Moore's Law<br>
+        Read High Performance Code Generation in MLIR: An Early Case Study with GEMM</p>
+    `,
+    "2024-06-28": `
+        <p>Read MOM: Matrix Operations in MLIR <br>
+        Read Compiler Support for Sparse Tensor in MLI</p>
+    `,
+    "2024-06-29": `
+        <p>Read Matrix Inversion Using Cholesky Decomposition <br>
+        Read Abstraction Raising in MLIR</p>
+    `,
+    "2024-06-30": `
+        <p> Read LoRA: Low-Rank Adaptation of Large Language Models</p>
+    `,
     "2024-07-01": `
-        <p>Worked on a new ML project.</p>
-        <img src="path/to/icon1.png" alt="Icon 1">
-        <button onclick="someFunction()">Click Me</button>
+        <p> Read LoraHub: Efficient Cross-Task Generalization via Dynamic LoRA Composition</p>
     `,
     "2024-07-02": `
-        <p>Reviewed research papers on AI.</p>
-        <img src="path/to/icon2.png" alt="Icon 2">
+        <p>Read Attention is All You Need <br>
+        Read BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</p>
     `,
-    // Add more entries as needed
+    "2024-07-03": `
+        <p>Read RoBERTa: A Robustly Optimized BERT Pretraining Approach
+        <br>Read Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity
+        </p>
+    `,
+    "2024-07-04": `
+        <p>July 4!</p>
+    `,
+    "2024-07-05": `
+        <p>Read Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
+        <br>Read Language Models are Unsupervised Multitask Learners</p>
+    `,
+    "2024-07-06": `
+        <p>Created this Website! I learned some HTML and CSS in the process.</p>
+    `,
+    "2024-07-07": `
+        <p>Created this Website!</p>
+    `,
+    "2024-07-08": `
+        <p>Improved my Skills with Pandas and Scikit-learn</p>
+    `,
+    "2024-07-09": `
+        <p>Improved my Skills with Pandas and Scikit-learn</p>
+    `,
+    "2024-07-10": `
+        <p>Read Long Short-Term Memory 
+        <br>Read Extended Long Short-Term Memory<p>
+    `,
+    "2024-07-11": `
+        <p>Read A Random Forest Guided Tour<p>
+    `,
+    "2024-07-12": `
+        <p> Competing at "RowFest" Summer Nationals <p>
+    `,
+    "2024-07-13": `
+        <p> Competing at "RowFest" Summer Nationals <p>
+    `,
+    "2024-07-14": `
+        <p> Competing at "RowFest" Summer Nationals <p>
+    `
 };
+
 
 // getting new date, current year and month
 let date = new Date(),
@@ -52,10 +105,45 @@ const renderCalendar = () => {
     daysTag.innerHTML = liTag;
 
     // Add click event listeners to the days
+
+    const cutoffDate = new Date('2024-07-15');
+
+
     document.querySelectorAll('.research-days li').forEach(day => {
         day.addEventListener('click', () => {
-            const selectedDate = `${currYear}-${String(currMonth + 1).padStart(2, '0')}-${String(day.dataset.date).padStart(2, '0')}`;
-            const content = dayContents[selectedDate] || `<p>No details available for ${months[currMonth]} ${day.dataset.date}, ${currYear}</p>`;
+            let clickedMonth = currMonth;
+            let clickedYear = currYear;
+            let clickedDate = parseInt(day.textContent);
+    
+            // Adjust for previous month
+            if (day.classList.contains('inactive')) {
+                if (clickedDate > 20) {
+                    // Previous month
+                    clickedMonth--;
+                    if (clickedMonth < 0) {
+                        clickedMonth = 11;
+                        clickedYear--;
+                    }
+                } else {
+                    // Next month
+                    clickedMonth++;
+                    if (clickedMonth > 11) {
+                        clickedMonth = 0;
+                        clickedYear++;
+                    }
+                }
+            }
+    
+            const selectedDate = `${clickedYear}-${String(clickedMonth + 1).padStart(2, '0')}-${String(clickedDate).padStart(2, '0')}`;
+            const clickedFullDate = new Date(clickedYear, clickedMonth, clickedDate);
+    
+            let content;
+            if (clickedFullDate > cutoffDate) {
+                content = '<p>To Be Decided!</p>';
+            } else {
+                content = dayContents[selectedDate] || `<p>No details available for ${months[clickedMonth]} ${clickedDate}, ${clickedYear}</p>`;
+            }
+    
             dayDescription.innerHTML = content;
             dayDetails.style.display = 'block';
         });
