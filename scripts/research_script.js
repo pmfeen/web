@@ -67,7 +67,31 @@ const dayContents = {
     `,
     "2024-07-14": `
         <p> Competing at "RowFest" Summer Nationals <p>
-    `
+    `,
+    "2024-07-15": `
+        <p> Competing at "RowFest" Summer Nationals <p>
+    `,
+    "2024-07-16": `
+        <p> Read Mapping the Mind of a Large Language Model <p>
+    `,
+    "2024-07-17": `
+        <p> Read How Powerful are Graph Neural Networks? <p>
+    `,
+    "2024-07-18": `
+        <p> Read Understanding Deep Learning Requires Rethinking Generalization <br>
+            Read Probable Networks and Plausible Predictions -- A Review of Practical Bayesian Methods for Supervised Neural Networks<p>
+    `,
+    "2024-07-19": `
+        <p> Read Rules of Machine Learning: Best Practices for ML Engineering <p>
+    `,
+    "2024-07-20": `
+        <p> Read Understanding Contrastive Representation Learning through Alignment and Uniformity on the Hypersphere <br>
+            Read Auto-Encoding Variational Bayes<p>
+    `,
+    "2024-07-21": `
+        <p> Read Scaling Laws for Neural Language Models<p>
+    `,
+
 };
 
 
