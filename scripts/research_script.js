@@ -130,7 +130,7 @@ const renderCalendar = () => {
 
     // Add click event listeners to the days
 
-    const cutoffDate = new Date('2024-07-15');
+    const cutoffDate = new Date('2024-07-22');
 
 
     document.querySelectorAll('.research-days li').forEach(day => {
