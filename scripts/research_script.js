@@ -66,7 +66,8 @@ const dayContents = {
         <p> Competing at "RowFest" Summer Nationals <p>
     `,
     "2024-07-14": `
-        <p> Competing at "RowFest" Summer Nationals <p>
+        <p> Competing at "RowFest" Summer Nationals <br>
+            I Won Two National Championships!<p>
     `,
     "2024-07-15": `
         <p> Competing at "RowFest" Summer Nationals <p>
