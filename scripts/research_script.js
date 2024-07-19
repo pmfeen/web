@@ -83,7 +83,8 @@ const dayContents = {
             Read Probable Networks and Plausible Predictions -- A Review of Practical Bayesian Methods for Supervised Neural Networks<p>
     `,
     "2024-07-19": `
-        <p> Read Rules of Machine Learning: Best Practices for ML Engineering <p>
+        <p> Read Rules of Machine Learning: Best Practices for ML Engineering <br>
+            Read Case-Based or Rule-Based: How Do Transformers Do the Math?<p> 
     `,
     "2024-07-20": `
         <p> Read Understanding Contrastive Representation Learning through Alignment and Uniformity on the Hypersphere <br>
