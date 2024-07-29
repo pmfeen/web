@@ -87,11 +87,25 @@ const dayContents = {
             Read Case-Based or Rule-Based: How Do Transformers Do the Math?<p> 
     `,
     "2024-07-20": `
-        <p> Read Understanding Contrastive Representation Learning through Alignment and Uniformity on the Hypersphere <br>
-            Read Auto-Encoding Variational Bayes<p>
+        <p> Read Understanding Contrastive Representation Learning through Alignment and Uniformity on the Hypersphere <p>
     `,
     "2024-07-21": `
+        <p> Read Representation Learning: A Review and New Perspectives<p>
+    `,
+    "2024-07-22": `
+        <p> Read A Recipe for Training Neural Networks <p>
+    `,
+    "2024-07-23": `
         <p> Read Scaling Laws for Neural Language Models<p>
+    `,
+    "2024-07-24": `
+        <p> Read Scaling Laws for Neural Language Models<p>
+    `,
+    "2024-07-25": `
+        <p> Read Training Compute-Optimal Large Language Models (Chinchilla Scaling Law)<p>
+    `,
+    "2024-07-28": `
+        <p> Read Beyond Neural Scaling Laws: Beating Power Law Scaling via Data Pruning<p>
     `,
 
 };
@@ -132,7 +146,7 @@ const renderCalendar = () => {
 
     // Add click event listeners to the days
 
-    const cutoffDate = new Date('2024-07-22');
+    const cutoffDate = new Date('2024-07-29');
 
 
     document.querySelectorAll('.research-days li').forEach(day => {
